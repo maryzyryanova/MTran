@@ -11,9 +11,3 @@ class Interpreter(object):
            self.tokens = self.analyzer.analyze(show_tables=True)
        except Exception as e:
            print(e)
-
-    def interpete(self):
-       pass
-
-    def execute(self):
-       pass
