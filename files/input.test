@@ -1,0 +1,17 @@
+int fact(int x)
+{
+   if(x == 0)
+   {
+       return 1;
+   }
+   else
+   {
+       int i = 1;
+       int p = 1;
+       for(i = 1; i < x+1; i++)
+       {
+           p *= i;
+       }
+       return p;
+   }
+}
