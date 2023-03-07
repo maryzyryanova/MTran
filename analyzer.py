@@ -11,6 +11,7 @@ from errors import(
     LexicalError,
     SyntaxError
 )
+from parsing import Parser
 
 class Analyzer(object):
     def __init__(self, source) -> None:
@@ -120,4 +121,6 @@ class Analyzer(object):
             print(constants, '\n')
             print(keywords, '\n')
             print(operators, '\n')
+        _parser = Parser(tokens)
+        _parser.parse(show=False)
         return tokens

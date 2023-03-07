@@ -6,6 +6,16 @@ STRING_PATTERN = r'^"[a-zA-Z]*"$'
 IDENTIFIER_PATTERN = r'^[a-zA-Z]\w*$'
 IDENTIFIER_DESC = 'Identifier of type'
 
+BINARY_OPERATORS = {'+', '-', '*', '/', '%', '==', '!=', '<', '>', '<=', '>='}
+ASSIGNMENT_OPERATORS = {'+=', '-=', '*=', '/=', '%=', '-'}
+UNARY_OPERATORS = {'++', '--'}
+DATA_TYPES = {'string', 'int', 'float'}
+ENDLINE = {';'}
+OPEN = {'{', '('}
+CLOSE = {'}', ')'}
+
+ALL_OPERATORS = BINARY_OPERATORS | ASSIGNMENT_OPERATORS | UNARY_OPERATORS | DATA_TYPES | ENDLINE | OPEN | CLOSE
+
 keywords = {
     'break': 'Flow control keyword',
     'continue': 'Flow control keyword',
